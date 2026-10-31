@@ -221,7 +221,7 @@ Every script is seeded, so outputs reproduce exactly. To explore without re-runn
 
 ## 👩‍💻 Author
 
-**Yashika** · B.Tech ECE (AI/ML), Netaji Subhas University of Technology, New Delhi
+**Yashika** · B.Tech ECE  Netaji Subhas University of Technology, New Delhi
 
 [GitHub](https://github.com/Yashika01234) · [LinkedIn](https://www.linkedin.com/in/yashika-nanda-936414321) · [Portfolio](https://personal-xi-inky-55.vercel.app/)
 
