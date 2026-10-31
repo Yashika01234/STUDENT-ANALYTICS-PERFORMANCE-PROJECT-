@@ -1,0 +1,94 @@
+// ===================== Student Performance Analytics - DAX measures =====================
+// Tables: dim_student, dim_course, dim_branch, dim_semester, fact_results, fact_student_semester, fact_student_summary, course_difficulty
+// Create a "_Measures" table (Enter data > empty) and add these there.
+
+// ---------- Core KPIs ----------
+Students = DISTINCTCOUNT ( dim_student[enrollment_no] )
+Avg CGPA = AVERAGE ( fact_student_summary[cgpa] )
+Median CGPA = MEDIAN ( fact_student_summary[cgpa] )
+% CGPA >= 8 =
+DIVIDE (
+    CALCULATE ( COUNTROWS ( fact_student_summary ), fact_student_summary[cgpa] >= 8 ),
+    COUNTROWS ( fact_student_summary )
+)
+Avg SGPA = AVERAGE ( fact_student_semester[sgpa] )
+Pass Rate = DIVIDE ( SUM ( fact_results[passed] ), COUNTROWS ( fact_results ) )
+Fail Rate = 1 - [Pass Rate]
+Avg Attendance = AVERAGE ( fact_student_summary[avg_attendance] )
+Students Below 75% Attendance = CALCULATE ( COUNTROWS ( fact_student_summary ), fact_student_summary[avg_attendance] < 75 )
+
+// ---------- Benchmarks ----------
+Branch Avg CGPA (benchmark) =
+CALCULATE ( [Avg CGPA], ALLEXCEPT ( fact_student_summary, fact_student_summary[branch] ) )
+CGPA vs Branch = [Avg CGPA] - [Branch Avg CGPA (benchmark)]
+Overall Avg CGPA = CALCULATE ( [Avg CGPA], ALL ( fact_student_summary ) )
+
+// ---------- Result Hub: rank and percentile for the selected student ----------
+Selected CGPA = SELECTEDVALUE ( fact_student_summary[cgpa] )
+Cohort Rank =
+VAR _branch = SELECTEDVALUE ( fact_student_summary[branch] )
+VAR _batch  = SELECTEDVALUE ( fact_student_summary[batch] )
+VAR _cgpa   = SELECTEDVALUE ( fact_student_summary[cgpa] )
+RETURN
+    IF (
+        NOT ISBLANK ( _cgpa ),
+        COUNTROWS (
+            FILTER (
+                ALL ( fact_student_summary ),
+                fact_student_summary[branch] = _branch
+                    && fact_student_summary[batch] = _batch
+                    && fact_student_summary[cgpa] > _cgpa
+            )
+        ) + 1
+    )
+Cohort Size =
+VAR _branch = SELECTEDVALUE ( fact_student_summary[branch] )
+VAR _batch  = SELECTEDVALUE ( fact_student_summary[batch] )
+RETURN
+    CALCULATE (
+        COUNTROWS ( fact_student_summary ),
+        ALL ( fact_student_summary ),
+        fact_student_summary[branch] = _branch,
+        fact_student_summary[batch] = _batch
+    )
+Top % = ROUNDUP ( DIVIDE ( [Cohort Rank], [Cohort Size] ) * 100, 0 )
+Top % Label = IF ( ISBLANK ( [Top %] ), BLANK (), "Top " & [Top %] & "% of " & SELECTEDVALUE ( fact_student_summary[branch] ) )
+Percentile = ROUND ( ( 1 - DIVIDE ( [Cohort Rank] - 1, [Cohort Size] ) ) * 100, 1 )
+
+// ---------- Trend ----------
+SGPA Prev Sem =
+CALCULATE (
+    [Avg SGPA],
+    FILTER ( ALL ( dim_semester ), dim_semester[semester] = MAX ( dim_semester[semester] ) - 1 )
+)
+SGPA Change = [Avg SGPA] - [SGPA Prev Sem]
+Students Dropping 1+ Point =
+COUNTROWS (
+    FILTER (
+        SUMMARIZE ( fact_student_semester, fact_student_semester[enrollment_no], "chg", [SGPA Change] ),
+        [chg] <= -1
+    )
+)
+
+// ---------- Course difficulty ----------
+Avg Difficulty Index = AVERAGE ( course_difficulty[difficulty_index] )
+Hardest Course =
+VAR _t = TOPN ( 1, VALUES ( course_difficulty[course_name] ), [Avg Difficulty Index], DESC )
+RETURN MAXX ( _t, course_difficulty[course_name] )
+
+// ---------- Machine-learning outputs ----------
+High Risk Students = CALCULATE ( COUNTROWS ( fact_student_summary ), fact_student_summary[risk_band] = "High" )
+High Risk % = DIVIDE ( [High Risk Students], COUNTROWS ( fact_student_summary ) )
+Model MAE (CGPA) = AVERAGEX ( fact_student_summary, ABS ( fact_student_summary[predicted_cgpa_s3_6] - fact_student_summary[target_cgpa_s3_6] ) )
+Actual At-Risk % in High Band =
+CALCULATE ( AVERAGE ( fact_student_summary[at_risk] ), fact_student_summary[risk_band] = "High" )
+
+// ---------- Calculated columns (add in Model view) ----------
+// fact_student_summary[cgpa_bin]   = FLOOR ( fact_student_summary[cgpa], 0.5 )
+// fact_student_summary[att_band]   = SWITCH ( TRUE (), [avg_attendance] < 65, "<65", [avg_attendance] < 75, "65-75", [avg_attendance] < 85, "75-85", "85+" )
+// course_difficulty[course_label]  = course_difficulty[course_name] & " (" & course_difficulty[branch_scope] & ", S" & course_difficulty[semester] & ")"
+
+// ---------- Row-level security (Modeling > Manage roles) ----------
+// Role "Student":  dim_student[enrollment_no] = LOOKUPVALUE ( user_map[enrollment_no], user_map[email], USERPRINCIPALNAME () )
+// Role "HOD":      dim_student[branch]        = LOOKUPVALUE ( hod_map[branch],        hod_map[email],    USERPRINCIPALNAME () )
+// Make sure relationships dim_student -> fact_* filter in the single direction (dim to fact).

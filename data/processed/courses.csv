@@ -1,0 +1,89 @@
+course_id,course_name,branch_scope,semester,course_type,credits
+COM-S1-1,Engineering Mathematics-I,ALL,1,Theory,4
+COM-S1-2,Engineering Physics,ALL,1,Theory,4
+COM-S1-3,Programming Fundamentals,ALL,1,Theory,4
+COM-S1-4,Physics Lab,ALL,1,Lab,2
+COM-S2-1,Engineering Mathematics-II,ALL,2,Theory,4
+COM-S2-2,Engineering Chemistry,ALL,2,Theory,4
+COM-S2-3,Basic Electrical Engineering,ALL,2,Theory,4
+COM-S2-4,Chemistry Lab,ALL,2,Lab,2
+UCS-S3-1,Data Structures,CSE,3,Theory,4
+UCS-S3-2,Discrete Mathematics,CSE,3,Theory,4
+UCS-S3-3,Digital Logic Design,CSE,3,Theory,4
+UCS-S3-4,Departmental Lab-1,CSE,3,Lab,2
+UCS-S4-1,Operating Systems,CSE,4,Theory,4
+UCS-S4-2,Computer Organisation,CSE,4,Theory,4
+UCS-S4-3,Database Systems,CSE,4,Theory,4
+UCS-S4-4,Departmental Lab-2,CSE,4,Lab,2
+UCS-S5-1,Design and Analysis of Algorithms,CSE,5,Theory,4
+UCS-S5-2,Computer Networks,CSE,5,Theory,4
+UCS-S5-3,Theory of Computation,CSE,5,Theory,4
+UCS-S5-4,Departmental Lab-3,CSE,5,Lab,2
+UCS-S6-1,Compiler Design,CSE,6,Theory,4
+UCS-S6-2,Machine Learning,CSE,6,Theory,4
+UCS-S6-3,Software Engineering,CSE,6,Theory,4
+UCS-S6-4,Departmental Lab-4,CSE,6,Lab,2
+UIT-S3-1,Data Structures,IT,3,Theory,4
+UIT-S3-2,Discrete Mathematics,IT,3,Theory,4
+UIT-S3-3,Web Technologies,IT,3,Theory,4
+UIT-S3-4,Departmental Lab-1,IT,3,Lab,2
+UIT-S4-1,Operating Systems,IT,4,Theory,4
+UIT-S4-2,Database Systems,IT,4,Theory,4
+UIT-S4-3,Computer Networks,IT,4,Theory,4
+UIT-S4-4,Departmental Lab-2,IT,4,Lab,2
+UIT-S5-1,Algorithms,IT,5,Theory,4
+UIT-S5-2,Information Security,IT,5,Theory,4
+UIT-S5-3,Cloud Computing,IT,5,Theory,4
+UIT-S5-4,Departmental Lab-3,IT,5,Lab,2
+UIT-S6-1,Data Mining,IT,6,Theory,4
+UIT-S6-2,Software Engineering,IT,6,Theory,4
+UIT-S6-3,Machine Learning,IT,6,Theory,4
+UIT-S6-4,Departmental Lab-4,IT,6,Lab,2
+UEC-S3-1,Signals and Systems,ECE,3,Theory,4
+UEC-S3-2,Analog Circuits,ECE,3,Theory,4
+UEC-S3-3,Digital Electronics,ECE,3,Theory,4
+UEC-S3-4,Departmental Lab-1,ECE,3,Lab,2
+UEC-S4-1,Electromagnetic Theory,ECE,4,Theory,4
+UEC-S4-2,Network Analysis,ECE,4,Theory,4
+UEC-S4-3,Communication Systems,ECE,4,Theory,4
+UEC-S4-4,Departmental Lab-2,ECE,4,Lab,2
+UEC-S5-1,Microprocessors,ECE,5,Theory,4
+UEC-S5-2,Control Systems,ECE,5,Theory,4
+UEC-S5-3,Digital Signal Processing,ECE,5,Theory,4
+UEC-S5-4,Departmental Lab-3,ECE,5,Lab,2
+UEC-S6-1,VLSI Design,ECE,6,Theory,4
+UEC-S6-2,Antenna Theory,ECE,6,Theory,4
+UEC-S6-3,Embedded Systems,ECE,6,Theory,4
+UEC-S6-4,Departmental Lab-4,ECE,6,Lab,2
+UEE-S3-1,Circuit Theory,EE,3,Theory,4
+UEE-S3-2,Electrical Machines-I,EE,3,Theory,4
+UEE-S3-3,Electromagnetic Fields,EE,3,Theory,4
+UEE-S3-4,Departmental Lab-1,EE,3,Lab,2
+UEE-S4-1,Network Analysis,EE,4,Theory,4
+UEE-S4-2,Electrical Machines-II,EE,4,Theory,4
+UEE-S4-3,Power Systems-I,EE,4,Theory,4
+UEE-S4-4,Departmental Lab-2,EE,4,Lab,2
+UEE-S5-1,Control Systems,EE,5,Theory,4
+UEE-S5-2,Measurements,EE,5,Theory,4
+UEE-S5-3,Power Electronics,EE,5,Theory,4
+UEE-S5-4,Departmental Lab-3,EE,5,Lab,2
+UEE-S6-1,Power Systems-II,EE,6,Theory,4
+UEE-S6-2,Electric Drives,EE,6,Theory,4
+UEE-S6-3,Digital Signal Processing,EE,6,Theory,4
+UEE-S6-4,Departmental Lab-4,EE,6,Lab,2
+UME-S3-1,Thermodynamics,ME,3,Theory,4
+UME-S3-2,Fluid Mechanics,ME,3,Theory,4
+UME-S3-3,Strength of Materials,ME,3,Theory,4
+UME-S3-4,Departmental Lab-1,ME,3,Lab,2
+UME-S4-1,Kinematics of Machines,ME,4,Theory,4
+UME-S4-2,Heat Transfer,ME,4,Theory,4
+UME-S4-3,Manufacturing Processes,ME,4,Theory,4
+UME-S4-4,Departmental Lab-2,ME,4,Lab,2
+UME-S5-1,Machine Design,ME,5,Theory,4
+UME-S5-2,Dynamics of Machines,ME,5,Theory,4
+UME-S5-3,Metrology,ME,5,Theory,4
+UME-S5-4,Departmental Lab-3,ME,5,Lab,2
+UME-S6-1,Refrigeration and AC,ME,6,Theory,4
+UME-S6-2,Finite Element Methods,ME,6,Theory,4
+UME-S6-3,Industrial Engineering,ME,6,Theory,4
+UME-S6-4,Departmental Lab-4,ME,6,Lab,2

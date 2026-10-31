@@ -1,0 +1,54 @@
+{
+  "regression_holdout": {
+    "Tuned Gradient Boosting": {
+      "rmse": 0.5669457279148067,
+      "mae": 0.43403483711549457,
+      "r2": 0.8501508486310368
+    },
+    "Ridge": {
+      "rmse": 0.5457333551069745,
+      "mae": 0.40511184009195433,
+      "r2": 0.8611543395334005
+    }
+  },
+  "best_regressor": "Ridge",
+  "best_params": {
+    "m__learning_rate": 0.05,
+    "m__max_depth": 3,
+    "m__n_estimators": 100
+  },
+  "at_risk_threshold": 7.0,
+  "at_risk_prevalence": 0.314,
+  "best_classifier": "Logistic Regression",
+  "classification": {
+    "Logistic Regression": {
+      "cv_auc": 0.9569,
+      "test_auc": 0.9709,
+      "precision": 0.8028,
+      "recall": 0.9048,
+      "f1": 0.8507
+    },
+    "Random Forest": {
+      "cv_auc": 0.9555,
+      "test_auc": 0.9693,
+      "precision": 0.8333,
+      "recall": 0.873,
+      "f1": 0.8527
+    }
+  },
+  "silhouette": {
+    "2": 0.29,
+    "3": 0.201,
+    "4": 0.21,
+    "5": 0.205,
+    "6": 0.188,
+    "7": 0.193
+  },
+  "top_features": {
+    "sgpa_s2": 0.274,
+    "sgpa_s1": 0.234,
+    "board_pct": 0.155,
+    "entrance_percentile": 0.116,
+    "weekly_study_hrs": 0.045
+  }
+}

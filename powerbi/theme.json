@@ -1,0 +1,11 @@
+{
+  "name": "Result Analytics",
+  "dataColors": ["#14213D", "#F2A900", "#1F7A8C", "#B5483A", "#6C8EAD", "#8FB339", "#7A5C99", "#C9A227"],
+  "background": "#EEF1F5", "foreground": "#14213D", "tableAccent": "#14213D",
+  "textClasses": {
+    "title": { "fontFace": "Segoe UI Semibold", "fontSize": 14, "color": "#14213D" },
+    "label": { "fontFace": "Segoe UI", "fontSize": 10, "color": "#5B667A" },
+    "callout": { "fontFace": "Segoe UI Semibold", "fontSize": 28, "color": "#14213D" }
+  },
+  "visualStyles": { "*": { "*": { "border": [{ "show": true, "color": { "solid": { "color": "#D5DBE5" } }, "radius": 8 }] } } }
+}

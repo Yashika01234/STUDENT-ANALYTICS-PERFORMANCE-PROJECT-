@@ -1,0 +1,76 @@
+{
+  "anova_cgpa_by_branch": {
+    "F": 4.28,
+    "p": 0.0019301038766992066
+  },
+  "welch_t_hostel_vs_day": {
+    "t": 1.14,
+    "p": 0.252990767020265,
+    "mean_hostel": 7.554,
+    "mean_day": 7.456
+  },
+  "welch_t_gender": {
+    "t": 0.72,
+    "p": 0.4720072012018699,
+    "mean_male": 7.523,
+    "mean_female": 7.457
+  },
+  "pearson_attendance_cgpa": {
+    "r": 0.637,
+    "p": 6.11923621798246e-115
+  },
+  "spearman_study_hours_cgpa": {
+    "rho": 0.406,
+    "p": 5.94636849618069e-41
+  },
+  "pearson_board_cgpa": {
+    "r": 0.775,
+    "p": 3.884492116673418e-201
+  },
+  "welch_t_batch_2021_vs_2022": {
+    "t": 1.57,
+    "p": 0.11730654426592245,
+    "mean_2021": 7.57,
+    "mean_2022": 7.435
+  },
+  "share_students_below_75pct_attendance": 0.345,
+  "branch_table": {
+    "CSE": {
+      "mean": 7.69,
+      "median": 7.8,
+      "std": 1.42
+    },
+    "IT": {
+      "mean": 7.68,
+      "median": 7.88,
+      "std": 1.18
+    },
+    "ECE": {
+      "mean": 7.55,
+      "median": 7.68,
+      "std": 1.38
+    },
+    "EE": {
+      "mean": 7.34,
+      "median": 7.48,
+      "std": 1.4
+    },
+    "ME": {
+      "mean": 7.25,
+      "median": 7.38,
+      "std": 1.37
+    }
+  },
+  "hardest_course": {
+    "course_name": "Power Systems-I",
+    "branch_scope": "EE",
+    "semester": 4,
+    "difficulty_index": 97.4
+  },
+  "easiest_theory_course": {
+    "course_name": "Computer Networks",
+    "branch_scope": "IT",
+    "semester": 4,
+    "difficulty_index": 29.269
+  }
+}

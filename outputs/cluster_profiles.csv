@@ -1,0 +1,5 @@
+cluster,cgpa,sgpa_trend,sgpa_std,avg_attendance,weekly_study_hrs,at_risk,students
+High achievers,8.54,-0.04,0.42,82.13,2.96,0.03,415
+Needs support,5.46,-0.32,1.07,71.5,1.64,0.97,98
+Rising (low base),5.72,0.26,0.98,71.49,1.97,0.79,92
+Steady middle,7.34,-0.05,0.49,76.0,1.72,0.33,395

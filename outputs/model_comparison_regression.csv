@@ -1,0 +1,5 @@
+model,cv_rmse,cv_rmse_std,cv_r2
+Ridge,0.5219,0.0247,0.8509
+Gradient Boosting,0.5481,0.0253,0.8357
+Random Forest,0.5494,0.0236,0.8343
+Baseline (mean),1.3629,0.085,-0.0061

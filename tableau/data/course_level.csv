@@ -1,0 +1,89 @@
+course_id,avg_gp,fail_rate,std_marks,avg_marks,avg_attendance,n_students,difficulty_index,course_name,branch_scope,semester,course_type,credits,difficulty_rank
+COM-S1-1,6.891,0.042,14.899,65.568,77.565,1000,68.533,Engineering Mathematics-I,ALL,1,Theory,4,19
+COM-S1-2,7.456,0.019,14.603,70.08,77.706,1000,50.616,Engineering Physics,ALL,1,Theory,4,41
+COM-S1-3,7.736,0.011,14.308,72.667,77.495,1000,42.554,Programming Fundamentals,ALL,1,Theory,4,57
+COM-S1-4,9.2,0.0,11.755,87.834,77.642,1000,8.981,Physics Lab,ALL,1,Lab,2,75
+COM-S2-1,6.839,0.044,14.847,64.934,77.526,1000,69.866,Engineering Mathematics-II,ALL,2,Theory,4,17
+COM-S2-2,7.589,0.015,14.309,71.324,77.75,1000,46.189,Engineering Chemistry,ALL,2,Theory,4,49
+COM-S2-3,7.397,0.016,14.356,69.411,77.824,1000,49.446,Basic Electrical Engineering,ALL,2,Theory,4,43
+COM-S2-4,9.229,0.0,11.092,88.281,77.592,1000,6.325,Chemistry Lab,ALL,2,Lab,2,79
+UCS-S3-1,7.04,0.05,15.945,67.465,79.025,200,73.083,Data Structures,CSE,3,Theory,4,12
+UCS-S3-2,7.535,0.015,15.857,71.295,78.648,200,52.194,Discrete Mathematics,CSE,3,Theory,4,37
+UCS-S3-3,7.07,0.03,15.823,67.17,78.814,200,64.469,Digital Logic Design,CSE,3,Theory,4,25
+UCS-S3-4,9.375,0.0,10.176,89.8,78.437,200,1.163,Departmental Lab-1,CSE,3,Lab,2,84
+UCS-S4-1,7.26,0.025,14.829,68.595,79.418,200,56.478,Operating Systems,CSE,4,Theory,4,31
+UCS-S4-2,8.07,0.01,15.155,76.385,78.806,200,40.323,Computer Organisation,CSE,4,Theory,4,60
+UCS-S4-3,6.725,0.055,15.692,64.54,78.78,200,78.614,Database Systems,CSE,4,Theory,4,6
+UCS-S4-4,9.37,0.0,10.098,90.025,79.158,200,0.971,Departmental Lab-2,CSE,4,Lab,2,87
+UCS-S5-1,7.1,0.04,15.864,67.66,79.016,200,68.074,Design and Analysis of Algorithms,CSE,5,Theory,4,20
+UCS-S5-2,6.985,0.04,15.967,66.625,78.626,200,70.046,Computer Networks,CSE,5,Theory,4,16
+UCS-S5-3,8.085,0.005,14.195,75.57,79.304,200,34.917,Theory of Computation,CSE,5,Theory,4,64
+UCS-S5-4,9.27,0.0,10.998,89.065,78.925,200,5.427,Departmental Lab-3,CSE,5,Lab,2,80
+UCS-S6-1,7.65,0.01,15.298,71.795,78.438,200,46.734,Compiler Design,CSE,6,Theory,4,47
+UCS-S6-2,7.745,0.005,14.673,72.24,78.699,200,41.333,Machine Learning,CSE,6,Theory,4,59
+UCS-S6-3,6.775,0.05,15.772,65.35,79.832,200,76.237,Software Engineering,CSE,6,Theory,4,9
+UCS-S6-4,9.385,0.0,10.561,89.955,79.348,200,2.328,Departmental Lab-4,CSE,6,Lab,2,82
+UEC-S3-1,6.835,0.035,14.965,64.34,77.16,200,66.824,Signals and Systems,ECE,3,Theory,4,22
+UEC-S3-2,7.635,0.015,13.884,71.7,77.742,200,44.1,Analog Circuits,ECE,3,Theory,4,54
+UEC-S3-3,7.27,0.03,15.341,68.625,78.042,200,60.017,Digital Electronics,ECE,3,Theory,4,26
+UEC-S3-4,9.14,0.0,11.745,87.28,77.414,200,9.793,Departmental Lab-1,ECE,3,Lab,2,73
+UEC-S4-1,7.835,0.005,14.565,74.035,77.378,200,39.696,Electromagnetic Theory,ECE,4,Theory,4,62
+UEC-S4-2,7.735,0.01,14.587,72.615,78.046,200,43.127,Network Analysis,ECE,4,Theory,4,56
+UEC-S4-3,6.945,0.025,14.404,65.185,77.228,200,59.483,Communication Systems,ECE,4,Theory,4,28
+UEC-S4-4,9.265,0.0,10.755,88.34,77.651,200,4.675,Departmental Lab-2,ECE,4,Lab,2,81
+UEC-S5-1,6.8,0.05,15.285,64.975,77.286,200,74.236,Microprocessors,ECE,5,Theory,4,11
+UEC-S5-2,6.39,0.085,15.079,62.18,76.936,200,92.931,Control Systems,ECE,5,Theory,4,2
+UEC-S5-3,7.54,0.01,14.608,70.505,78.012,200,45.948,Digital Signal Processing,ECE,5,Theory,4,50
+UEC-S5-4,9.185,0.0,12.033,87.97,77.545,200,10.132,Departmental Lab-3,ECE,5,Lab,2,70
+UEC-S6-1,7.35,0.035,14.832,69.625,77.441,200,59.109,VLSI Design,ECE,6,Theory,4,29
+UEC-S6-2,7.17,0.03,14.557,67.86,77.322,200,58.771,Antenna Theory,ECE,6,Theory,4,30
+UEC-S6-3,7.55,0.01,14.051,71.02,78.186,200,43.919,Embedded Systems,ECE,6,Theory,4,55
+UEC-S6-4,9.225,0.0,11.323,88.135,77.71,200,7.165,Departmental Lab-4,ECE,6,Lab,2,78
+UEE-S3-1,7.515,0.015,14.183,70.885,77.021,200,46.805,Circuit Theory,EE,3,Theory,4,46
+UEE-S3-2,7.215,0.015,14.182,67.58,77.613,200,51.034,Electrical Machines-I,EE,3,Theory,4,40
+UEE-S3-3,7.455,0.01,13.924,70.02,77.304,200,44.832,Electromagnetic Fields,EE,3,Theory,4,51
+UEE-S3-4,9.195,0.0,11.362,87.61,77.913,200,7.721,Departmental Lab-1,EE,3,Lab,2,77
+UEE-S4-1,6.665,0.055,14.804,63.255,77.132,200,76.454,Network Analysis,EE,4,Theory,4,8
+UEE-S4-2,7.23,0.025,14.181,67.425,78.071,200,54.707,Electrical Machines-II,EE,4,Theory,4,32
+UEE-S4-3,6.24,0.09,15.199,61.015,77.552,200,97.4,Power Systems-I,EE,4,Theory,4,1
+UEE-S4-4,9.125,0.005,11.023,86.925,77.766,200,9.505,Departmental Lab-2,EE,4,Lab,2,74
+UEE-S5-1,6.705,0.045,14.397,63.55,77.134,200,70.622,Control Systems,EE,5,Theory,4,14
+UEE-S5-2,7.23,0.02,14.469,67.94,77.657,200,53.74,Measurements,EE,5,Theory,4,33
+UEE-S5-3,6.5,0.06,14.992,62.255,78.129,200,81.364,Power Electronics,EE,5,Theory,4,4
+UEE-S5-4,9.13,0.0,11.746,87.035,77.416,200,9.936,Departmental Lab-3,EE,5,Lab,2,71
+UEE-S6-1,6.39,0.06,15.366,61.62,77.384,200,84.181,Power Systems-II,EE,6,Theory,4,3
+UEE-S6-2,7.135,0.045,15.061,67.105,77.96,200,66.808,Electric Drives,EE,6,Theory,4,23
+UEE-S6-3,7.515,0.02,15.059,70.68,77.88,200,51.717,Digital Signal Processing,EE,6,Theory,4,38
+UEE-S6-4,9.14,0.0,11.335,86.975,77.15,200,8.403,Departmental Lab-4,EE,6,Lab,2,76
+UIT-S3-1,7.29,0.02,14.056,68.345,77.256,200,51.495,Data Structures,IT,3,Theory,4,39
+UIT-S3-2,7.01,0.02,13.312,66.14,77.496,200,52.925,Discrete Mathematics,IT,3,Theory,4,36
+UIT-S3-3,7.49,0.01,13.877,70.19,77.242,200,44.178,Web Technologies,IT,3,Theory,4,53
+UIT-S3-4,9.36,0.0,10.061,89.655,77.819,200,0.987,Departmental Lab-1,IT,3,Lab,2,86
+UIT-S4-1,7.825,0.005,12.805,73.43,78.237,200,33.878,Operating Systems,IT,4,Theory,4,65
+UIT-S4-2,7.325,0.015,13.697,68.635,78.148,200,47.841,Database Systems,IT,4,Theory,4,45
+UIT-S4-3,8.09,0.0,13.122,75.57,78.37,200,29.269,Computer Networks,IT,4,Theory,4,66
+UIT-S4-4,9.34,0.0,10.36,89.36,77.656,200,2.282,Departmental Lab-2,IT,4,Lab,2,83
+UIT-S5-1,7.105,0.02,13.922,66.67,78.391,200,53.648,Algorithms,IT,5,Theory,4,34
+UIT-S5-2,7.32,0.02,13.842,68.86,77.546,200,50.347,Information Security,IT,5,Theory,4,42
+UIT-S5-3,7.04,0.02,13.634,66.27,77.169,200,53.593,Cloud Computing,IT,5,Theory,4,35
+UIT-S5-4,9.43,0.0,10.115,90.26,77.512,200,0.182,Departmental Lab-3,IT,5,Lab,2,88
+UIT-S6-1,7.56,0.025,13.787,70.93,77.164,200,48.718,Data Mining,IT,6,Theory,4,44
+UIT-S6-2,6.7,0.04,14.436,63.95,77.361,200,68.881,Software Engineering,IT,6,Theory,4,18
+UIT-S6-3,6.71,0.025,13.462,63.15,77.039,200,59.609,Machine Learning,IT,6,Theory,4,27
+UIT-S6-4,9.365,0.0,10.087,89.925,77.694,200,1.004,Departmental Lab-4,IT,6,Lab,2,85
+UME-S3-1,6.62,0.04,13.829,63.205,76.018,200,67.954,Thermodynamics,ME,3,Theory,4,21
+UME-S3-2,7.43,0.005,14.373,69.52,76.848,200,44.76,Fluid Mechanics,ME,3,Theory,4,52
+UME-S3-3,7.485,0.01,13.356,69.695,77.125,200,42.482,Strength of Materials,ME,3,Theory,4,58
+UME-S3-4,9.055,0.0,11.639,86.445,76.093,200,10.634,Departmental Lab-1,ME,3,Lab,2,68
+UME-S4-1,7.515,0.015,14.024,70.705,77.346,200,46.268,Kinematics of Machines,ME,4,Theory,4,48
+UME-S4-2,6.525,0.055,14.125,62.14,77.651,200,76.132,Heat Transfer,ME,4,Theory,4,10
+UME-S4-3,6.62,0.05,15.505,63.115,77.261,200,77.52,Manufacturing Processes,ME,4,Theory,4,7
+UME-S4-4,9.07,0.0,11.463,86.18,77.376,200,9.826,Departmental Lab-2,ME,4,Lab,2,72
+UME-S5-1,6.405,0.06,14.295,61.415,76.762,200,80.342,Machine Design,ME,5,Theory,4,5
+UME-S5-2,6.47,0.045,14.139,61.515,76.95,200,73.064,Dynamics of Machines,ME,5,Theory,4,13
+UME-S5-3,6.955,0.04,14.738,65.865,77.394,200,66.308,Metrology,ME,5,Theory,4,24
+UME-S5-4,9.06,0.0,11.642,86.04,76.656,200,10.572,Departmental Lab-3,ME,5,Lab,2,69
+UME-S6-1,6.595,0.045,13.925,62.885,76.304,200,70.577,Refrigeration and AC,ME,6,Theory,4,15
+UME-S6-2,7.425,0.0,13.041,69.345,77.024,200,38.375,Finite Element Methods,ME,6,Theory,4,63
+UME-S6-3,7.55,0.005,13.509,70.46,76.872,200,40.139,Industrial Engineering,ME,6,Theory,4,61
+UME-S6-4,9.005,0.0,11.972,85.64,75.934,200,12.467,Departmental Lab-4,ME,6,Lab,2,67
