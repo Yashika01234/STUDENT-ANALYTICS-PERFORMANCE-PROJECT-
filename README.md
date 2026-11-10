@@ -2,7 +2,7 @@
 
 # 🎓 Student Performance Analytics
 
-### An end-to-end data analytics project inspired by university result portals like NSUT's Result Hub
+### An end-to-end data analytics project 
 
 **Branch-wise CGPA · Rank and percentile · Course difficulty · ML early-warning system**
 
